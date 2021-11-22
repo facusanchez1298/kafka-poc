@@ -1,4 +1,4 @@
-package com.example.kafka.Controller;
+package com.example.kafka.Controllers;
 
 import com.example.kafka.events.Event;
 import org.springframework.kafka.core.KafkaTemplate;

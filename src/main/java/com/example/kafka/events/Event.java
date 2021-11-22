@@ -4,7 +4,6 @@ import lombok.*;
 import lombok.extern.jackson.Jacksonized;
 
 @Getter
-@Setter
 @Builder
 @Jacksonized
 public class Event {

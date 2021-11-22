@@ -1,16 +1,15 @@
-package com.example.kafka.Controller;
+package com.example.kafka.listeners;
 
 import com.example.kafka.events.Event;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.kafka.annotation.KafkaHandler;
-import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
 @Component
-@KafkaListener(id = "event-listener", topics = {"mensajes"})
-public class KafkaControllerListener {
+@org.springframework.kafka.annotation.KafkaListener(id = "event-listener", topics = {"mensajes"})
+public class KafkaEventListener {
 
     private final TaskExecutor exec = new SimpleAsyncTaskExecutor();
 
